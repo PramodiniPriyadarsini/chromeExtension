@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Manoj Kumar Yadav",
+  "description": "World best amazing Person",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches":["http://*/**","https://*/**"],
+      "css":["style.css"],
+      "js":["jquery.js","myscript.js"]
+    }
+  ],
+  "web_accessible_resources":[
+    "toolbar.html",
+    "style.css"
+  ]
+}
